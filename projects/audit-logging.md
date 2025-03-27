@@ -54,9 +54,9 @@ Other vendors are invited to join the discussion.
   - @reyang
   - tbd
 * GC liaison: @svrnm
-* Engineers for API/SDK:
-  * SAP will provide a prototype in two languages (tbd; likely two of Java, JavaScript, Go)
-* Engineers for OTel Collector: tbd
+* Engineers contributing to the SIG:
+  - tbd
+  - ...
 * Maintainers/approvers: tbd
 
 ## Timeline
