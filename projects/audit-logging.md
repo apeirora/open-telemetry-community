@@ -49,7 +49,7 @@ Other vendors are invited to join the discussion.
 
 ### Required staffing
 
-* Project lead: SAP (@hilmarf)
+* Project lead: @hilmarf
 * Sponsors:
   - @reyang
   - tbd
