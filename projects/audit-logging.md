@@ -49,13 +49,13 @@ Other vendors are invited to join the discussion.
 
 ### Required staffing
 
-* Project lead: SAP (name tbd)
+* Project lead: SAP (@hilmarf)
 * Sponsors:
   - @reyang
   - tbd
 * GC liaison: @svrnm
 * Engineers contributing to the SIG:
-  - tbd
+  - @hilmarf
   - ...
 * Maintainers/approvers: tbd
 
