@@ -75,7 +75,7 @@ Other vendors are invited to join the discussion.
 
 ## Timeline
 
-- Phase 1: until September 2025
+- Phase 1: until end of September 2025 (approx.)
 - Phase 2: tbd
 - Phase 3: tbd
 
