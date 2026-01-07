@@ -1,12 +1,13 @@
 # Generative AI Observability
 
->[!IMPORTANT] This project extends LLM Semantic Conventions project
+> [!IMPORTANT]
+> This project extends LLM Semantic Conventions project
 
 ## Description
 
 Generative AI observability is evolving fast. The industry is still learning how to use GenAI products which creates new opportunities and challenges in the observability space. GenAI observability is focused on development time and verbose telemetry. Non-deterministic nature of GenAI creates the need to measure the quality and safety of responses which become part of observability.
 
-There are multiple GenAI-focused observability projects out there such as [Arize Phoenix](https://docs.arize.com/phoenix), [Langfuse](https://langfuse.com/), [LangSmith](https://www.langchain.com/langsmith), [Langtrace](https://langtrace.ai/), [OpenLit](https://github.com/openlit/openlit), [Traceloop](https://www.traceloop.com/docs/introduction) and many others.
+There are multiple GenAI-focused observability projects out there such as [Arize Phoenix](https://arize.com/docs/phoenix), [Langfuse](https://langfuse.com/), [LangSmith](https://www.langchain.com/langsmith), [Langtrace](https://langtrace.ai/), [OpenLit](https://github.com/openlit/openlit), [Traceloop](https://www.traceloop.com/docs/introduction) and many others.
 
 Some of these projects are based on OpenTelemetry, others are "inspired by" it, but don't have out-of-the-box integration with OTel.
 
@@ -102,20 +103,23 @@ Some of the repositories (such as opentelemetry-js-contrib) provide a lot of aut
 
 | Alias | Language | Company/Project | Time commitment |
 | ----- | -------- | ----------------|---------------- |
+| @adharshctr | JS & Python | IBM | |
 | @AmanAgarwal041 | JS & Python | OpenLIT | |
 | @alizenhom  | JS & Python | Langtrace | |
-| @codefromthecrypt | JS & Python | Elastic | |
+| @codefromthecrypt | JS & Python | Elastic | 4 hours/week |
 | @drewby  | JS & Python | Microsoft | |
 | @galkleinman | JS & Python | Traceloop | |
 | @gyliu513 | JS & Python | IBM | |
 | @karthikscale3 | JS & Python | Langtrace | |
-| @lmolkova | Python | Microsoft | | 16 hours/week |
-| @lzchen | Python | Microsoft | | 4 hours/week |
+| @LakshmiSujith | JS & Python | IBM | |
+| @lmolkova | Python | Microsoft | 16 hours/week |
+| @lzchen | Python | Microsoft | 4 hours/week |
+| @madhutadiparthi4ibm | JS & Python | IBM | |
+| @NehaGhongade | JS & Python | IBM | |
 | @nirga  | JS & Python | Traceloop | |
 | @patcher9 | JS & Python | OpenLIT | |
 | @trentm | JS | Elastic | |
 | @xrmx | Python | Elastic | |
-| @codefromthecrypt | JS & Python | Elastic | 4 hours/week |
 
 *looking for more contributors*
 
@@ -123,9 +127,9 @@ Other languages are not in the scope (yet).
 
 ## Meeting Times
 
-We'll use GenAI LLM Semantic Convention meetings until more suitable time for new participants is determined:
+We'll use GenAI Semantic Convention meetings until more suitable time for new participants is determined:
 
-- **Every week**: Wednesdays at 10 AM PST - Looking for alternative time to accommodate more time zones - https://strawpoll.com/e6Z2ApEKXgN
+- **Every other week**: Thursday at 10 AM PST
 - **Every other week**: Thursday 14:00 UTC+8
 
 ### Meeting Links
@@ -135,8 +139,7 @@ We'll use GenAI LLM Semantic Convention meetings until more suitable time for ne
 
 ## Discussion
 
-* Slack: [#otel-llm-semconv-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
-(TODO: rename to `#otel-gen-ai-wg`)
+* Slack: [#otel-genai-instrumentation-wg](https://cloud-native.slack.com/archives/C06KR7ARS3X)
 
 ## Timeline
 
@@ -161,5 +164,5 @@ We'll use GenAI LLM Semantic Convention meetings until more suitable time for ne
 
 ## Project Board
 
-* Project Board: [LLM Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
-(TODO: rename to `GenAI Client Instrumentation`)
+* Project Board: [GenAI Client Semantic Conventions](https://github.com/orgs/open-telemetry/projects/82)
+

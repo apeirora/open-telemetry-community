@@ -89,7 +89,7 @@ SIG's part of OpenTelemetry.
 A SIG is an open, community effort. Anybody is welcome to jump into a SIG and
 begin fixing issues, critiquing design proposals and reviewing code. SIGs have
 regular [video
-meetings](https://github.com/open-telemetry/community#special-interest-groups)
+meetings](https://github.com/open-telemetry/community/blob/main/README.md#special-interest-groups)
 which everyone is welcome to attend.
 
 ### SIG-specific contributing guidelines
@@ -124,12 +124,12 @@ to ask a question or send a pull request.
 ### Communication
 
 It is best to contact your
-[SIG](https://github.com/open-telemetry/community#Special-Interest-Groups) for
+[SIG](https://github.com/open-telemetry/community/blob/main/README.md#special-interest-groups) for
 issues related to the SIG's topic. Your SIG will be able to help you much more
 quickly than a general question would.
 
 For general questions and troubleshooting, use the [standard lines of
-communication](https://github.com/open-telemetry/community#Communication).
+communication](https://github.com/open-telemetry/community/blob/main/README.md#communication).
 
 ## GitHub workflow
 
@@ -165,7 +165,7 @@ To make it easier for your PR to receive reviews, consider the reviewers will
 need you to:
 
 - follow the project and repository coding conventions
-- write [good commit messages](https://chris.beams.io/posts/git-commit/)
+- write [good commit messages](https://cbea.ms/git-commit/)
 - break large changes into a logical series of smaller patches which
   individually make easily understandable changes, and in aggregate solve a
   broader issue
@@ -173,8 +173,7 @@ need you to:
   the bot sends you to guide you through the PR process
 
 Reviewers, the people giving the review, are highly encouraged to revisit the
-[Code of
-Conduct](https://github.com/open-telemetry/community/blob/master/code-of-conduct.md)
+[Code of Conduct](../../code-of-conduct.md)
 and must go above and beyond to promote a collaborative, respectful community.
 
 When reviewing PRs from others [The Gentle Art of Patch
@@ -192,7 +191,7 @@ mention approvers or maintainers of this repository.
 
 ## Code attribution and licensing
 
-[License information](README.md#License) should be included in all source files where applicable.
+[License information](../../README.md#license) should be included in all source files where applicable.
 Either full or short version of the header should be used as described at [apache.org](https://www.apache.org/foundation/license-faq.html#Apply-My-Software).
 It is OK to exclude the year from the copyright notice. For the details on how to apply the copyright,
 see the next section.
@@ -207,11 +206,14 @@ you will need to [retain the original copyright notice](https://github.com/cncf/
 
 Any contributed third-party code must originally be Apache 2.0-Licensed or must
 carry a permissive software license that is compatible when combining with
-Apache 2.0 License. At this moment, BSD and MIT are the only
-[OSI-approved licenses](https://opensource.org/licenses/alphabetical) known to be compatible.
+Apache-2.0 License. 
 
-If you make substantial changes to the third-party code, _prepend_ the contributed
-third party file with OpenTelemetry's copyright notice.
+If you directly incorporate or vendor Apache-2.0 license compatible third-party code, follow
+the [CNCF Recommendations for Attribution Notices](https://github.com/cncf/foundation/blob/main/policies-guidance/recommendations-for-attribution.md).
+
+The [CNCF Allowlist License Policy](https://github.com/cncf/foundation/blob/main/policies-guidance/allowed-third-party-license-policy.md#cncf-allowlist-license-policy)
+describes the requirements for depending on third-party code in CNCF codebases,
+along with a list of approved compatible licenses.
 
 If the contributed code is not third-party code and you are the author we
 strongly encourage to avoid including your name in the notice and use the

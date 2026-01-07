@@ -26,7 +26,7 @@ No more than one-fourth (25%) of the TC members may be affiliated with the same 
 
 The TC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TC discussions and meetings.
 
-The TC shall meet regularly using tools that enable participation by the community The meeting shall be directed by the TC Chairperson. Responsibility for directing individual meetings may be delegated by the TC Chairperson to any other TC member. TC members are expected to regularly participate in TC activities.
+The TC shall meet regularly using tools that enable participation by the community. The meeting shall be directed by a rotating TC member. TC members are expected to regularly participate in TC activities.
 
 In the case where an individual TC member -- within any six month period -- attends fewer than 25% of the regularly scheduled meetings, does not participate in TC discussions, and does not participate in TC votes, the member shall be automatically removed from the TC. The member may be invited to continue attending TC meetings as an observer.
 
@@ -37,7 +37,6 @@ The TC is responsible for all technical development within the OpenTelemetry pro
 * Setting release dates
 * Quality standards for releases
 * Technical direction
-* GitHub repository management, membership and hosting
 * Development process and any coding standards
 * Approving changes to any specifications
 * Mediating technical discussions which have cross project impact
@@ -61,6 +60,33 @@ The development process will include a process for the TC to oversee and approve
 
 The TC and entire technical community will follow any processes as may be specified by the Cloud Native Computing Foundation relating to the intake and license compliance review of contributions, including the CNCF IP Policy.
 
+### Sponsorship Requirements
+
+The TC will establish and maintain sponsorship across OpenTelemetry SIGs.
+
+SIGs will be classified into three classifications of Sponsorship requirement:
+
+* *Escalation Sponsorship*: The TC sponsor will be a primary means of escalation of cross-project concerns from the SIG. This communication is primarily
+  offline, e.g. via CNCF Slack or issue communication. The TC sponsor will participate in [GC check-ins](gc-check-ins.md) with SIG leadership.
+  Additionally, the TC sponsor will aid the SIG in developing roadmaps during this check-in, and aligning to overall OpenTelemetry goals.
+* *Guiding Sponsorship*: The TC sponsor is an active participant of the SIG. The sponsor will help direct the SIGs efforts to match the technical goals of OpenTelemetry.
+* *Leading Sponsorship*: The TC sponsor is an active member of SIG leadership, responsible for driving the SIG's completion of charter goals.
+
+All SIGs within OpenTelemetry will be required to have some level of sponsorship requirement (at least *Escalation*). Higher level sponsorship automatically fulfills
+lower level sponsorship requirements, e.g. *Guiding* sponsorship fulfills an *Escalation* sponsorship requirement, as *Leading* sponsorship would fulfill a
+*Guiding* sponsorship requirement. Sponsorship is not exclusive. More than one TC member may sponsor a SIG.
+
+As part of their active leadership, every TC member will be required to sponsor SIGs across OpenTelemetry.
+
+All SIGs requiring escalation sponsorship will be divided across the TC. Every TC member is required to provide a minimum of at least three *Escalation* sponsorships
+and two *Guiding* sponsorships. Higher level sponsorship may be used to fulfill a lower level sponsorship requirement.
+
+Every TC member is limited to a maximum of two *Leading* sponsorships. This is to keep OpenTelemetry efforts focused and reduce fragmented attention on
+core issues.
+
+A TC member may have a time where they are not meeting the minimum sponsorship requirement, e.g. when major efforts have achieved results, and new projects are being formulated.
+This time should not exceed a six month period.
+
 ### Code Donations
 
 From time to time, organizations may wish to donate existing code to
@@ -73,23 +99,12 @@ Leadership roles in OpenTelemetry project will be peer elected representatives o
 
 ### Election of TC Members
 
-New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
+New TC members can be nominated by any Member in Standing as defined in the [OpenTelemetry Governance Charter](./governance-charter.md#members-of-standing), and must be sponsored by one of the existing TC members to bring it to a vote. A candidate can be elected to the TC by the super-majority vote (greater than two thirds) of the existing TC members. The voting by the TC members is anonymous. A multiple-candidate method, such as [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote), may be used to conduct the vote, by phrasing the selections as:
 
 * Vote for Nominee X
 * Vote against Nominee X
 
 The voting should remain open for a minimum of 5 business days.
-
-### Election of TC Chair
-
-The TC will elect from amongst voting TC members a TC Chairperson to work on building an agenda for TC meetings. The TC shall hold annual elections to select a TC Chairperson; there are no limits on the number of terms a TC Chairperson may serve.
-
-For election of persons (such as the TC Chairperson) by a vote of the TC voting members, a multiple-candidate method should be used, such as:
-
-* [Condorcet](https://en.wikipedia.org/wiki/Condorcet_method) or
-* [Single Transferable Vote](https://en.wikipedia.org/wiki/Single_transferable_vote)
-
-Multiple-candidate methods may be reduced to simple election by plurality when there are only two candidates for one position to be filled. No election is required if there is only one candidate and no objections to the candidates election. Elections shall be done within the Projects by the collaborators active in the Project.
 
 ## Voting on project issues
 
@@ -103,7 +118,7 @@ For all votes, a simple majority of a quorum of TC members for, or against, the 
 
 ### Requesting a TC decision
 
-When a project issue fails to reach consensus, OpenTelemetry [community members](./guides/contributor/membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./community-membership.md#approver) and / or [maintainers](./community-membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
+When a project issue fails to reach consensus, OpenTelemetry [community members](./guides/contributor/membership.md#member) may request that the TC make a decision. If the issue falls under a project with assigned [approvers](./guides/contributor/membership.md#approver) and / or [maintainers](./guides/contributor/membership.md#maintainer), at least two of those members should agree to and coordinate requesting a TC decision.
 
 The request for a TC decision must be made by a comment on a public issue. The comment must explicitly tag the TC team (@open-telemetry/technical-committee), and summarize the various options and their relative tradeoffs. A TC member should review the summary and may request additional details or other changes to more accurately frame the issue. The request will then be added to the TC agenda, and the TC will work towards a decision using the [TC voting process](#voting-on-project-issues).
 
@@ -113,4 +128,4 @@ The OpenTelemetry project git repository is maintained by the TC and additional 
 
 Individuals making significant and valuable contributions, can move through the project to leadership roles as outlined in the [Community Membership](./guides/contributor/membership.md) document. Modifications of the contents of the git repository are made on a collaborative basis as defined in the development process.
 
-Project Members may opt to elevate (via [mail list](./#tc-technical-committee)) significant or controversial modifications, or modifications that have not found consensus to the TC for discussion. The TC will serve as the final arbiter where required. The TC will additionally publish and maintain a development process guide for people looking to participate in the development effort.
+Project Members may opt to elevate (via [mail list](./README.md#mailing-lists)) significant or controversial modifications, or modifications that have not found consensus to the TC for discussion. The TC will serve as the final arbiter where required. The TC will additionally publish and maintain a development process guide for people looking to participate in the development effort.

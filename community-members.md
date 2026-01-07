@@ -3,35 +3,35 @@
 ## Governance Committee
 
 This is the current Governance Committee, per the [Governance Committee
-Charter](https://github.com/open-telemetry/community/blob/master/governance-charter.md),
+Charter](./governance-charter.md),
 in alphabetical order:
 
-- [Alolita Sharma](https://github.com/alolita), Apple, until October 2024
-- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2025
-- [Daniel Dyla](https://github.com/dyladan), Dynatrace, until October 2024
-- [Daniel Gomez Blanco](https://github.com/danielgblanco), Skyscanner, until October 2025
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs, until October 2025
-- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2024
-- [Severin Neumann](https://github.com/svrnm), Cisco, until October 2025
-- [Ted Young](https://github.com/tedsuo), Lightstep, until October 2025
-- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2024
+- [Alolita Sharma](https://github.com/alolita), Apple, until October 2026
+- [Austin Parker](https://github.com/austinlparker), Honeycomb, until October 2027
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden, until October 2027
+- [Marylia Gutierrez](https://github.com/maryliag), Grafana Labs, until October 2027
+- [Morgan McLean](https://github.com/mtwo), Splunk, until October 2026
+- [Pablo Baeyens Fernandez](https://github.com/mx-psi), Datadog, until October 2026
+- [Severin Neumann](https://github.com/svrnm), Causely, until October 2027
+- [Ted Young](https://github.com/tedsuo), Grafana Labs, until October 2027
+- [Trask Stalnaker](https://github.com/trask), Microsoft, until October 2026
 
 ## Technical Committee
 
-This is the current Technical Committee, per the [Technical Committee
-Charter](https://github.com/open-telemetry/community/blob/master/tech-committee-charter.md),
+This is the current Technical Committee, per the
+[Technical Committee Charter](./tech-committee-charter.md),
 in alphabetical order:
 
 - [Armin Ruech](https://github.com/arminru), Dynatrace
 - [Bogdan Drutu](https://github.com/BogdanDrutu), Snowflake
 - [Carlos Alberto](https://github.com/carlosalberto), Lightstep
-- [Jack Berg](https://github.com/jack-berg), New Relic
-- [Josh MacDonald](https://github.com/jmacd), Lightstep
+- [David Ashpole](https://github.com/dashpole), Google
+- [Jack Berg](https://github.com/jack-berg), Grafana Labs
+- [Josh MacDonald](https://github.com/jmacd), Microsoft
 - [Josh Suereth](https://github.com/jsuereth), Google
-- [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+- [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 - [Reiley Yang](https://github.com/reyang), Microsoft
 - [Tigran Najaryan](https://github.com/tigrannajaryan), Splunk
-- [Yuri Shkuro](https://github.com/yurishkuro), Meta
 
 ## Community Management
 
@@ -54,13 +54,12 @@ repositories:
 - [Christian Neumüller](https://github.com/Oberon00), Dynatrace
 - [Cijo Thomas](https://github.com/cijothomas), Microsoft
 - [Daniel Dyla](https://github.com/dyladan), Dynatrace
-- [David Ashpole](https://github.com/dashpole), Google
-- [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
+- [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
 - [Leighton Chen](https://github.com/lzchen), Microsoft
 - [Marc Alff](https://github.com/marcalff), Oracle
 - [Robert Pająk](https://github.com/pellared), Splunk
-- [Severin Neumann](https://github.com/svrnm), Cisco
-- [Ted Young](https://github.com/tedsuo), Lightstep
+- [Severin Neumann](https://github.com/svrnm), Independent
+- [Ted Young](https://github.com/tedsuo), Grafana Labs
 - [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
 - [Tyler Yahn](https://github.com/MrAlias), Splunk
 
@@ -69,7 +68,6 @@ Emeritus sponsors (formerly approvers):
 - [Christian Beedgen](https://github.com/kumoroku)
 - [Daniel Jaglowski](https://github.com/djaglowski)
 - [David Poncelow](https://github.com/zenmoto)
-- [Leighton Chen](https://github.com/lzchen)
 - [Nikita Salnikov-Tarnovski](https://github.com/iNikem)
 
 ## Semantic Conventions
@@ -102,7 +100,7 @@ The [list of active members](https://github.com/open-telemetry/opentelemetry-dot
 
 Repo: [open-telemetry/opentelemetry-dotnet-instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
-The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/tree/main/docs#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/tree/main/docs#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
+The [list of active members](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md#community-roles) (both "approvers" and "maintainers") can be found in the [README.md](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docs/README.md#community-roles) file in the [repo](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation).
 
 ## Golang
 
@@ -176,6 +174,12 @@ Repo: [open-telemetry/opentelemetry-swift](https://github.com/open-telemetry/ope
 
 The list of active members (both "approvers" and "maintainers") for the OpenTelemetry Swift API & SDK can be found in the [open-telemetry/opentelemetry-swift CONTRIBUTING file](https://github.com/open-telemetry/opentelemetry-swift/blob/main/CONTRIBUTING.md).
 
+## Network collector
+
+Repos: [open-telemetry/opentelemetry-network](https://github.com/open-telemetry/opentelemetry-network) and [open-telemetry/opentelemetry-network-build-tools](https://github.com/open-telemetry/opentelemetry-network-build-tools)
+
+The list of active members (both "approvers" and "maintainers") for OpenTelemetry Network can be found in the [open-telemetry/opentelemetry-network README file](https://github.com/open-telemetry/opentelemetry-network/blob/main/README.md#contributing).
+
 ## Community Demo
 
 Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/opentelemetry-demo)
@@ -185,6 +189,8 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 - [Ben Sigelman](https://github.com/bhs), until October 2023
 - [Bogdan Drutu](https://github.com/BogdanDrutu), until October 2023
 - [Constance Caramanolis](https://github.com/ccaraman), until October 2021
+- [Daniel Dyla](https://github.com/dyladan), until October 2024
+- [Daniel Gomez Blanco](https://github.com/danielgblanco), until October 2025
 - [Liz Fong-Jones](https://github.com/lizthegrey), until October 2022
 - [Sarah Novotny](https://github.com/SarahNovotny), until October 2021
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev), until October 2021
@@ -193,3 +199,4 @@ Repo: [open-telemetry/opentelemetry-demo](https://github.com/open-telemetry/open
 ## Technical Committee Emeritus
 
 - [Sergey Kanzhelev](https://github.com/SergeyKanzhelev)
+- [Yuri Shkuro](https://github.com/yurishkuro)

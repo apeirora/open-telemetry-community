@@ -33,7 +33,7 @@ The new member must:
    2. [Concepts](https://opentelemetry.io/docs/concepts/)
    3. [Specification](https://opentelemetry.io/docs/specs/otel/)
 2. Have read and agreed to comply with the
-   [OpenTelemetry Governance Committee Charter](https://github.com/open-telemetry/community/blob/main/governance-charter.md)
+   [OpenTelemetry Governance Committee Charter](../../governance-charter.md)
    as per requirements to stand for election.
 3. Have an email address, Google account, and GitHub account and is willing
    to share those details with other GC members.
@@ -55,7 +55,7 @@ The existing member must:
       via email.
 - [ ] After invite is accepted, add them to the `Owners` group as a `Manager`.
 
-The  current member must:
+The new member must:
 
 - [ ] Accept invitation and create new account on [OpenTelemetry 1Password](https://opentelemetry.1password.com).
 - [ ] Validate they have `Manager` access to `Owners` group, and that the group
@@ -73,21 +73,25 @@ The existing member must:
   - [opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE)
   - [opentelemetry-gc-tc](https://cloud-native.slack.com/archives/C02KF2PPUV9)
   - [opentelemetry-gc-alum](https://cloud-native.slack.com/archives/C02KBUGC685)
+  - [opentelemetry-gc-end-user](https://cloud-native.slack.com/archives/C065JSPJN15)
 
 The new member must:
 
 - [ ] Create a [CNCF Slack](https://slack.cncf.io/) account if they do not
   already have one.
 
-### CNCF Service Desk
+### CNCF Service Desk and Mailing Lists
 Interactions between the OpenTelemetry GC and CNCF are mostly driven via Service
 Desk tickets. Members can create tickets to discuss access to systems, licensing,
 funds, marketing, press, etc.
 
 The existing member must:
 
-- [ ] Create a Service Desk ticket to invite new member via email and add it to
-  OpenTelemetry group.
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitations to the Service Desk
+      and mailing lists for the new member
+      - https://lists.cncf.io/g/cncf-opentelemetry-governance (moderator)
+      - https://lists.cncf.io/g/cncf-opentelemetry-announce (moderator)
+      - https://lists.cncf.io/g/cncf-opentelemetry-maintainers (member)
 
 The new member must:
 
@@ -95,6 +99,20 @@ The new member must:
 - [ ] Validate they have access to the [CNCF Service Desk](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)
   (see more information about Service Desk in the [docs](https://github.com/cncf/servicedesk#readme)).
 - [ ] Validate they have access to [OpenTelemetry Requests](https://cncfservicedesk.atlassian.net/servicedesk/customer/user/requests?page=1&reporter=org-31).
+- [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
+  if necessary, using their preferred email address.
+
+### Additional Mailing List
+
+The existing member must:
+
+- [ ] Invite new member as `Moderator`, ensuring that they have the same
+  privileges as existing members, to the following mailing list:
+  - https://lists.cncf.io/g/cncf-otel-zoomadmins
+
+The new member must:
+- [ ] Accept invitations to mailing list above, creating an account on https://lists.cncf.io
+  if necessary, using their preferred email address.
 
 ### GitHub
 Most of the management, enablement, support and documentation work done by GC
@@ -110,23 +128,6 @@ The existing member must:
 - [ ] Add new member to the list of GC members in [open-telemetry/community/community-members.md](https://github.com/open-telemetry/community/blob/main/community-members.md).
 - [ ] Add new member in the `OpenTelemetry (Governance Committee)` section of [cncf/foundation/project-maintainers.csv](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
 
-### Mailing Lists
-The following mailing lists ensure that communications reach all necessary
-members of this group.
-
-The existing member must:
-
-- [ ] Invite new member as `Moderator`, ensuring that they have the same
-  privileges as existing members, to the following mailing lists:
-  - https://lists.cncf.io/g/cncf-opentelemetry-governance
-  - https://lists.cncf.io/g/cncf-otel-zoomadmins
-- [ ] Open CNCF Service Desk ticket to invite new member as `Member` to 
-  https://lists.cncf.io/g/cncf-opentelemetry-maintainers
-
-The new member must:
-- [ ] Accept invitations to mailing lists above, creating an account on https://lists.cncf.io
-  if necessary, using their preferred email address.
-
 ### Google Drive
 OpenTelemetry handles minutes and other ad-hoc documents in Google Drive.
 
@@ -134,25 +135,13 @@ The existing member must:
 
 - [ ] Give new member write access to:
   - [OpenTelemetry Governance Committee meeting notes](https://docs.google.com/document/d/1-23Sf7-xZK3OL5Ogv2pK0NP9YotlSa0PKU9bvvtQwp8)
+- [ ] Add email from the new member to the `governance-committee@opentelemetry.io` Google group.
 
 The new member must:
 
 - [ ] Validate they have write access to the documents listed above.
 
-### Google Calendar
-All OpenTelemetry public meetings are handled via Google Calendars (see [How to handle public calendar](https://github.com/open-telemetry/community/blob/main/docs/how-to-handle-public-calendar.md)
-for more details). People in the  `opentelemetry-calendar-contributors` Google
-Group have write access to the OpenTelemetry public calendar. To view and
-manage members of this group one must use the `admin@opentelemetry.io`
-account.
-
-The existing member must:
-
-- [ ] Add user as `Owner` of https://groups.google.com/g/opentelemetry-calendar-contributors.
-
-The new member must:
-
-- [ ] Validate they have `Owner` permissions on the group above.
+_Note: Confidential documents shared only between GC members are stored under the admin google account and never shared with private accounts. To see/edit them, you must login into the admin google account._
 
 ### Zapier
 Zapier is used to sync meeting recordings from Zoom to a publicly viewable
@@ -162,11 +151,24 @@ for more details).
 The new member must:
 - [ ] Validate they can log in to https://zapier.com with the credentials in 1Password.
 
+### FOSSA
+The CNCF FOSSA Service is a static code checker that codifies and monitors the project's compliance with the [CNCF's 3rd Party License policy](https://github.com/cncf/foundation/blob/main/policies-guidance/allowed-third-party-license-policy.md#cncf-allowlist-license-policy).
+
+The existing member must:
+
+- [ ] Send an email to cncf-maintainer-changes@cncf.io to request invitation of the new member to [FOSSA](https://app.fossa.com/)
+- [ ] After invite is accepted, add them to the [OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675).
+
+The new member must:
+
+- [ ] Accept invitation and create account.
+- [ ] Validate they are in the [OpenTelemetry Team](https://app.fossa.com/account/settings/organization/teams/78675).
+
 ## Meetings and Ceremonies
 As per GC charter, all members are expected to attend the following meetings:
 
-- Governance Committee Meeting (every Thursday 11:00 Pacific Time).
-- Governance/Technical Committee Joint Meeting (every second Thursday of the month,
+- Governance Committee Meeting (every [Wednesday 8:00 Pacific Time](https://dateful.com/convert/pst-pdt-pacific-time?t=0800)).
+- Governance/Technical Committee Joint Meeting (every second Wednesday of the month,
   coinciding with the Governance Committee Meeting).
 
 The dates and times of these meetings may be discussed and updated after every
@@ -193,8 +195,7 @@ capacity, in finding answers to these questions.
 - [ ] [Active Projects](https://github.com/open-telemetry/community/tree/main/projects):
   to understand current project deliverables and the challenges they aim to
   solve.
-- [ ] [Project Board](https://github.com/orgs/open-telemetry/projects/29):
-  including the individual project boards for each of these, they help
+- [ ] [Projects](https://github.com/open-telemetry/community/projects?query=is%3Aopen):
   understand the current state of the projects listed in the previous item.
 - [ ] [Community repo docs](https://github.com/open-telemetry/community/tree/main/docs):
   for instructions on how to work with calendars, configuring repositories,

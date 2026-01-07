@@ -5,7 +5,11 @@ on:
     branches:
       - main
   pull_request:
+  merge_group:
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
@@ -13,4 +17,12 @@ concurrency:
 
 jobs:
   markdown-link-check:
-    uses: ./.github/workflows/reusable-markdown-link-check.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+
+      - name: Run markdown-link-check
+        run: make markdown-link-check
+        env:
+          # see https://lychee.cli.rs/troubleshooting/rate-limits/#github-rate-limiting
+          GITHUB_TOKEN: ${{ github.token }}

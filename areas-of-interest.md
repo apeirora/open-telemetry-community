@@ -33,22 +33,13 @@ concerns.
 - OpenTracing compatibility
 - Semantic conventions
 
-### [Jack Berg](https://github.com/jack-berg), New Relic
+### [Jack Berg](https://github.com/jack-berg), Grafana Labs
 
 - Metrics API and SDK
 - Logging API and SDK
 - SDK configuration
 - OpenTelemetry Java
 - OpenTelemetry protocol
-
-### [Josh MacDonald](https://github.com/jmacd), Lightstep
-
-- Metrics API and SDK and data model
-- Metrics collection infrastructure
-- Metrics protocol compatibility
-- OpenTelemetry protocol
-- Trace sampling algorithms
-- Trace API & SDK
 
 ### [Josh Suereth](https://github.com/jsuereth), Google
 
@@ -58,9 +49,10 @@ concerns.
 - Protocol compatibility (OpenCensus, Prometheus, Statsd, etc.)
 - Semantic conventions
 
-### [Liudmila Molkova](https://github.com/lmolkova), Microsoft
+### [Liudmila Molkova](https://github.com/lmolkova), Grafana Labs
 
 - Trace API and SDK
+- Logging API and SDK
 - Semantic conventions
 - Instrumentation
 
@@ -81,24 +73,17 @@ concerns.
 - Entities
 - OpAMP
 
-### [Yuri Shkuro](https://github.com/yurishkuro), Meta
-
-- Trace API and SDK
-- Jaeger tracing compatibility
-- OpenTracing compatibility
-- W3C trace context specification
-
-## Maintainers and approvers
-
-Maintainers and approvers are invited to list their areas of interest
-to further assist the community in finding appropriate points of
-contact.
+## Specification sponsors
 
 ### [Alex Boten](https://github.com/codeboten), Honeycomb
 
 - OpenTelemetry Collector
 - OpenTelemetry Python
 - SDK configuration
+
+### [Christian Neumüller](https://github.com/Oberon00), Dynatrace
+
+### [Cijo Thomas](https://github.com/cijothomas), Microsoft
 
 ### [Daniel Dyla](https://github.com/dyladan), Dynatrace
 
@@ -107,6 +92,55 @@ contact.
 - Trace and Metrics
 - Trace Sampling
 
+### [David Ashpole](https://github.com/dashpole), Google
+
+### [Josh MacDonald](https://github.com/jmacd), Microsoft
+
+- Metrics API and SDK and data model
+- Metrics collection infrastructure
+- Metrics protocol compatibility
+- OpenTelemetry protocol
+- Trace sampling algorithms
+- Trace API & SDK
+
+### [Juraci Paixão Kröhling](https://github.com/jpkrohling), OllyGarden
+
+- OpenTelemetry Collector
+- Distributed tracing
+- Security
+- Sampling
+
+### [Leighton Chen](https://github.com/lzchen), Microsoft
+
+### [Marc Alff](https://github.com/marcalff), Oracle
+
+- Trace API and SDK
+- Metrics API and SDK
+- SDK configuration
+- Security
+- OpenTelemetry C++
+
+### [Robert Pająk](https://github.com/pellared), Splunk
+
+### [Severin Neumann](https://github.com/svrnm), Cisco
+
+### [Ted Young](https://github.com/tedsuo), Grafana Labs
+
+### [Tristan Sloughter](https://github.com/tsloughter), MyDecisiveAI
+
+- Trace and Metrics API & SDK
+- OpenTelemetry Erlang
+- Developer Experience
+- SDK configuration
+
+### [Tyler Yahn](https://github.com/MrAlias), Splunk
+
+## Maintainers and approvers
+
+Maintainers and approvers are invited to list their areas of interest
+to further assist the community in finding appropriate points of
+contact.
+
 ### [Dan Jaglowski](https://github.com/djaglowski), observIQ
 
 - OpenTelemetry collector
@@ -114,18 +148,18 @@ contact.
 - Traditional log ingestion
 - Telemetry processing
 
-### [Juraci Paixão Kröhling](https://github.com/jpkrohling), Grafana Labs
-
-- OpenTelemetry Collector
-- Distributed tracing
-- Security
-- Sampling
-
 ### [Tom Tan](https://github.com/ThomsonTan), Microsoft
 
 - Logging API and SDK
 - Trace API and SDK
 - OpenTelemetry C++
 - OpenTelemetry Protocol
+
+### [Severin Neumann](https://github.com/svrnm/), Independent
+
+- Contributor Experience
+- Distributed Tracing
+- Documentation
+- Security
 
 <!-- ### [_Your name here_](https://github.com/your_name), Your Company -->

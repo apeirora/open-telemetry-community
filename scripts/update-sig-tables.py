@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import pip
+import subprocess
 import sys
 
 # in the Makefile we use a unmodified python container to run this script, so we need to install pyyaml if it's not already installed
 if (len(sys.argv) > 1) and (sys.argv[1] == "--install"):
-    pip.main(['install', 'pyyaml'])
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyyaml'])
     sys.argv = sys.argv[1:]
 
 import yaml
@@ -65,6 +65,11 @@ for group in data:
             if chat.get('name') and chat.get('type')]
         )
 
+        short_name = None
+        for chat in sig.get('chat', []):
+            if chat.get('type') == 'slack':
+                short_name = 'sig-' + chat.get('name').replace('#otel-', '').replace('sig-', '')
+                break
 
         invites = sig.get('invites', 'none')
         tc_sponsors = ",<br/>".join(
@@ -91,9 +96,9 @@ for group in data:
             calendar = f"[{invites}](https://groups.google.com/a/opentelemetry.io/g/{invites})"
         
         if group_name == "Specification SIGs":
-            markdown_content += f"| {name} | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
+            markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {tc_sponsors} | {gc_liaison} | \n"
         else:
-            markdown_content += f"| {name} | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
+            markdown_content += f"| {name}&nbsp;<a id=\"{short_name}\" href=\"#{short_name}\"><sup>🔗</sup></a> | {meeting} | {notes} | {chats} | {calendar} | {gc_liaison} |\n"
 
     # Add a newline for spacing after the table
     markdown_content += "\n"

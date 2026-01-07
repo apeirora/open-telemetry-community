@@ -2,62 +2,21 @@
 
 This file is intended to list all the assets controlled by OpenTelemetry.
 
-<!-- Re-generate TOC with `make markdown-toc` -->
+## GitHub organization
 
-<!-- toc -->
+Link: https://github.com/open-telemetry
 
-- [Credential Storage](#credential-storage)
-- [Community Resource Accounts](#community-resource-accounts)
-  * [Actuated](#actuated)
-  * [AWS account](#aws-account)
-  * [Equinix bare metal](#equinix-bare-metal)
-  * [Grafana organization for SIG Security](#grafana-organization-for-sig-security)
-  * [Netlify](#netlify)
-  * [Oracle Cloud account](#oracle-cloud-account)
-- [Artifact repositories](#artifact-repositories)
-  * [NuGet OpenTelemetry organization](#nuget-opentelemetry-organization)
-  * [MyGet OpenTelemetryCNCF account](#myget-opentelemetrycncf-account)
-  * [NPM OpenTelemetry Organization](#npm-opentelemetry-organization)
-  * [Crates](#crates)
-  * [Maven](#maven)
-  * [PyPI](#pypi)
-- [Communication channels](#communication-channels)
-  * [opentelemetry-calendar-contributors Google Group](#opentelemetry-calendar-contributors-google-group)
-  * [OpenTelemetry Calendar Invites Google Group](#opentelemetry-calendar-invites-google-group)
-  * [Mailing list cncf-opentelemetry-net-maintainers@lists.cncf.io](#mailing-list-cncf-opentelemetry-net-maintainerslistscncfio)
-  * [Mailing list cncf-opentelemetry-ruby@lists.cncf.io](#mailing-list-cncf-opentelemetry-rubylistscncfio)
-  * [Mailing list cncf-opentelemetry-governance@lists.cncf.io](#mailing-list-cncf-opentelemetry-governancelistscncfio)
-  * [YouTube channel OpenTelemetry](#youtube-channel-opentelemetry)
-  * [Zoom accounts](#zoom-accounts)
-  * [Zapier account](#zapier-account)
-  * [Google Workspace accounts](#google-workspace-accounts)
-  * [Google account for cncf-opentelemetry-governance@lists.cncf.io](#google-account-for-cncf-opentelemetry-governancelistscncfio)
-- [Bot accounts](#bot-accounts)
-  * [Easy CLA](#easy-cla)
-  * [Docker Hub](#docker-hub)
-  * [OpenTelemetry Bot](#opentelemetry-bot)
-- [Security](#security)
-
-<!-- tocstop -->
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
 
 ## Credential Storage
 
 - [1Password Teams](https://1password.com/)
   - Team account: https://opentelemetry.1password.com/
-  - https://github.com/1Password/1password-teams-open-source#opentelemetry
+  - https://github.com/1Password/for-open-source
   - PR: https://github.com/1Password/1password-teams-open-source/pull/364
   - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 
 ## Community Resource Accounts
-
-### Actuated
-
-Link: https://actuated.dev/blog/arm-ci-cncf-ampere
-Doc: [Using Actuated](docs/using-actuated.md)
-
-- GitHub App available for repositories to get ARM64 Actions runners.
-- Admin: N/A. The program is managed by the CNCF and Actuated. The only
-  available admin task is to add the GitHub App to a repository.
 
 ### AWS account
 
@@ -66,31 +25,69 @@ Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 - Community account to published Lambda layers
 - Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
 
-### Equinix bare metal
+### FOSSA
 
-Link: https://console.equinix.com/projects/6f1c9af6-0470-42da-8f22-59d0df245f6b
+We have an OpenTelemetry team under the CNCF's enterprise account.
 
-- Reserved bare metal machines for the community to run performance tests and
-  other assets on
-- Admin: Juraci Paixão Kröhling @jpkrohling and OTel TC via the mailing list address
+Link: https://app.fossa.com/
 
-### GitHub-hosted ARM64 runners
+- Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+- Team admins: [@austinlparker](https://github.com/austinlparker), [@reyang](https://github.com/reyang), [@trask](https://github.com/trask)
 
-These Linux and Windows ARM64
-[GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
-are available to OpenTelemetry repositories:
+### Special GitHub Action runners
 
-- `otel-linux-arm64` (4-core)
-- `otel-windows-arm64` (4-core)
+#### Large Linux runners
 
-At the time of writing, both of these runners have a concurrency limit of 20 jobs.
+CNCF provides the following large Linux runners which are available to all repositories:
 
-Individual repositories need to be granted access to the runners, so please open a community issue
-if you would like to use them.
+- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
+- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
 
-Note: these pay-as-you-go GitHub-hosted runners for ARM64 are available for free for CNCF projects.
+Note that normal-sized Linux ARM64 runners are [available for free to all public
+repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
+
 CNCF and GitHub expect fair use of these provided resources.
 Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
+
+#### Large Windows runners
+
+Access to large Windows runners is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
+
+- `otel-windows-latest-8-cores`
+
+Note: these runners are pay-as-you-go.
+CNCF and GitHub expect fair use of these provided resources.
+Please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+#### Bare metal runners
+
+Access to bare metal runners for benchmarking is available to repositories on request
+(open a community issue),
+which will give access to the following GitHub-hosted runner:
+
+- `oracle-bare-metal-64cpu-512gb-x86-64`
+
+Note: there is only one bare metal runner at this time, so
+please ensure your workloads are optimized to avoid unnecessary usage.
+
+Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+#### Linux/s390x runners
+
+IBM provides linux/s390x runners for build and test automation on this platform. Access to these runners is available to repositories on request; please open a community issue to request access. The following runners are currently available:
+
+- `ubuntu-24.04-s390x`
+- `ubuntu-22.04-s390x`
+
+Note: In response to your request, IBM may ask for additional information such as primary use cases for the runner or the link to the current existing actions workflow file(s). At this stage, the action runners are sized to fulfill common build and unit test tasks.
+
+Admin: [@rrschulze](https://github.com/rrschulze)
 
 ### Google Cloud account
 
@@ -98,7 +95,7 @@ Link: https://cloud.google.com
 
 - Community account to host https://go.opentelemetry.io
 - Admin: [@austinlparker](https://github.com/austinlparker)
-  (password is available in the OpenTelemetry Governance 1Password)
+  (password is the same as admin@opentelemetry.io "Google Workspace account", available in the OpenTelemetry Governance 1Password)
 
 ### Grafana organization for SIG Security
 
@@ -126,6 +123,17 @@ Link: https://www.oracle.com/cloud/sign-in.html
 - Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
+
+### Develocity
+
+We have a [Develocity](https://gradle.com/develocity/) instance
+available to Java projects using Gradle build system.
+
+Link: https://develocity.opentelemetry.io
+
+- GitHub organization secret: `DEVELOCITY_ACCESS_KEY`
+- Secret stored in the OpenTelemetry Java 1Password vault
+- Admin: [@trask](https://github.com/trask)
 
 ## Artifact repositories
 
@@ -174,7 +182,24 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@codeboten](https://github.com/codeboten)
+- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
+  (password is available in the OpenTelemetry Python 1Password vault)
+
+### PHP Extras
+
+SIG Extra Repositories: https://github.com/opentelemetry-php
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
+
+Packagist: https://packagist.org/?query=open-telemetry
+
+Owners:
+
+- [@bobstrecansky](https://github.com/bobstrecansky)
+- [@brettmc](https://github.com/brettmc)
 
 ## Communication channels
 
@@ -228,14 +253,6 @@ Link: https://groups.google.com/g/opentelemetry-calendar
 - All GC members AND CNCF reps (Amye Scavarda Perrin, Chris Aniszczyk, Taylor Waggoner) are on the list and are list moderators.
 - Admin: CNCF (via [CNCF Service Desk ticket](https://cncfservicedesk.atlassian.net/servicedesk/customer/portals)).
 
-### YouTube channel OpenTelemetry
-
-Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
-
-- Ask any of the following people if you need to manage the feed:
-  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
-  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
-
 ### Zoom accounts
 
 - Accounts
@@ -276,6 +293,34 @@ Link: https://zapier.com
 - Used for community Google Docs
 - Used to manage Zoom
 
+## Social media channels
+
+### BlueSky
+
+Link: https://bsky.app/profile/opentelemetry.io
+
+### Buffer
+
+Used to publish to the different social media channels.
+
+Link: https://publish.buffer.com/
+
+### LinkedIn
+
+Link: https://www.linkedin.com/company/opentelemetry
+
+### Mastodon
+
+Link: https://fosstodon.org/@opentelemetry
+
+### YouTube
+
+Link: https://www.youtube.com/channel/UCHZDBZTIfdy94xMjMKz-_MA/videos
+
+- Ask any of the following people if you need to manage the feed:
+  - Owners: Amye Scavarda Perrin (CNCF rep), Sergey Kanzhelev
+  - Managers: Alolita Sharma, Alan West, Austin Parker, Ben Sigelman, Eddy Nakamura
+
 ## Bot accounts
 
 Related: [Guidelines for adding new GitHub extensions](./docs/using-github-extensions.md).
@@ -292,22 +337,31 @@ For support:
 
 ### Docker Hub
 
-- We publish images from CI to Docker hub using https://hub.docker.com/u/otelbot account. The bot is registered using cncf-opentelemetry-tc@lists.cncf.io email address and Technical Committee members are owners of this account. The Admin for bot security credentials for CI is @tigrannajaryan
+https://hub.docker.com/u/otel is a Docker-Sponsored Open Source organization.
 
-### OpenTelemetry Bot
+Minimum-scoped Docker Hub organization access tokens should be used to push images.
 
-This is a community-owned bot account that you can use when automating common GitHub tasks
-(e.g. release automation tasks).
+- Admins
+  - [@austinlparker](https://github.com/austinlparker)
+  - [@jsuereth](https://github.com/jsuereth)
+  - [@tigrannajaryan](https://github.com/tigrannajaryan)
+  - [@trask](https://github.com/trask)
 
-Important: You do not need to (and should not) give this account any permissions to any OpenTelemetry repository.
+### `otelbot`
 
-Link: [@opentelemetrybot](https://github.com/opentelemetrybot)
+This is a [GitHub App] owned by [@open-telemetry](https://github.com/open-telemetry) that you can use when
+automating common GitHub tasks in OpenTelemetry repos such as release automation tasks.
 
-- Admins: [@open-telemetry/technical-committee](https://github.com/orgs/open-telemetry/teams/technical-committee)
-  (GitHub password and associated 2FA for the `@opentelemetrybot` account are available in the Technical Committee
-  1Password)
+This GitHub App has the following permissions:
 
-The OpenTelemetry Bot addresses two common issues:
+- Read access to metadata
+- Read and write access to pull requests
+- Read access to org members and teams
+
+Admins
+- [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+This GitHub App addresses two common issues:
 
 1. Since you can't push directly to `main` from workflows (due to branch protections), the next best thing is to
    generate a pull request from the automation and use an account which has signed the CLA as the commit author.
@@ -315,32 +369,82 @@ The OpenTelemetry Bot addresses two common issues:
    The OpenTelemetry Bot account has signed the CNCF CLA, and you can assign it as the commit author in your automation:
 
    ```
-   git config user.name opentelemetrybot
-   git config user.email 107717825+opentelemetrybot@users.noreply.github.com
+   git config user.name otelbot
+   git config user.email 197425009+otelbot@users.noreply.github.com
    ```
 
-   It is recommended to push to branch names that start with `opentelemetrybot/`, and to add a branch protection
-   rule for `opentelemetrybot/**/**` with the same setup as documented for
-   [`dependabot/**/**`](https://github.com/open-telemetry/community/blob/main/docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot). Note that branch protection rule ordering matters, so you will need to
-   delete the `**/**` branch protection rule temporarily, then add the `opentelemetrybot/**/**` branch protection
-   rule, then add back the `**/**` branch protection rule.
+   It is recommended to push to branch names that start with `otelbot/`, and to add a branch protection
+   rule for `otelbot/**/*` with the same setup as documented for
+   [`dependabot/**/*`](docs/how-to-configure-new-repository.md#branch-protection-rule-dependabot).
 
-2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside of a GitHub Action, workflows
+   > [!WARNING]
+   > Branch protection rule **ordering** matters, so you will need to delete the `**/**` branch protection rule temporarily, then add the `otelbot/**/*` branch protection rule, then add back the `**/**` branch protection rule.
+
+2. When you use the built-in `secrets.GITHUB_TOKEN` to generate a pull request from inside a [GitHub Action], workflows
    will not run on that new pull request without closing and re-opening it manually (this limitation is in place to
    prevent accidental recursive workflow runs).
 
-   The OpenTelemetry GitHub organization has a GitHub Action secret named `OPENTELEMETRYBOT_GITHUB_TOKEN`, which is a
-   [Personal Access Token][] for [@opentelemetrybot](https://github.com/opentelemetrybot) with `public_repo`
-   scope for the OpenTelemetry Bot that you can use to bypass this limitation.
+   The OpenTelemetry GitHub organization has a GitHub Action secret (`OTELBOT_PRIVATE_KEY`)
+   and a GitHub Action variable `OTELBOT_APP_ID` that can be used to create a GitHub App token
+   which will bypass this limitation, e.g.
 
-   The personal access token also has `workflow` scope which is needed when merging upstream changes of
-   `.github/workflow` files into opentelemetrybot's forks (these forks are used for automatically opening PRs against
-   external repos).
+   ```
+   - uses: actions/create-github-app-token@v1
+     id: app-token
+     with:
+       app-id: ${{ vars.OTELBOT_APP_ID }}
+       private-key: ${{ secrets.OTELBOT_PRIVATE_KEY }}
 
-   Maintainers can open an issue in the community repository to have their repository granted access to this
-   organization secret.
+   - name: Create pull request
+     env:
+       # not using secrets.GITHUB_TOKEN since pull requests from that token do not trigger workflows
+       GH_TOKEN: ${{ steps.app-token.outputs.token }}
+     run: ...
+   ```
 
-   [Personal Access Token]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+> [!WARNING]
+> The `otelbot` is and needs to remain a **_public_ GitHub App** in order for EasyCLA to be able to verify its CLA status.
+
+[GitHub Action]: https://docs.github.com/en/actions
+[GitHub App]: https://docs.github.com/en/apps
+
+### `otelbot` (SIG-specific)
+
+SIG-specific `otelbot` GitHub apps are for repositories that need to run automations
+with permissions beyond the main `otelbot`.
+Each of these apps is scoped to a single repository with dedicated credentials.
+
+**Usage in GitHub Actions**:
+
+(replacing `_JAVA_CONTRIB_` with the SIG-specific name)
+
+```yaml
+- uses: actions/create-github-app-token@v1
+  id: app-token
+  with:
+    app-id: ${{ vars.OTELBOT_JAVA_CONTRIB_APP_ID }}
+    private-key: ${{ secrets.OTELBOT_JAVA_CONTRIB_PRIVATE_KEY }}
+
+- name: Automated task
+  env:
+    GH_TOKEN: ${{ steps.app-token.outputs.token }}
+  run: |
+    # otelbot is on the EasyCLA allowlist
+    git config user.name otelbot
+    git config user.email 197425009+otelbot@users.noreply.github.com
+    # Your automation commands here
+```
+
+- Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+### `@opentelemetrybot` GitHub user
+
+[@opentelemetrybot](https://github.com/opentelemetrybot) is a GitHub user
+that can be used for automation that requires a real GitHub user rather than a GitHub App.
+
+For example, the [open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
+repository has an automation that sends PRs to external GitHub organizations, and so a real GitHub user
+is required (at least without asking the external GitHub organization to install a GitHub App).
 
 ### Slack
 

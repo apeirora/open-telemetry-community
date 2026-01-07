@@ -57,8 +57,7 @@ Defined by: Member of the OpenTelemetry GitHub organization
     chat, email, and discussion forums)
 - [Joined the Slack channel](https://cloud-native.slack.com/archives/CJFCJHG4Q)
   - [Get an invite to join CNCF](https://slack.cncf.io/)
-- Have read the [contributor
-  guide](https://github.com/open-telemetry/community/blob/main/guides/contributor)
+- Have read the [contributor guide](../../guides/contributor)
 - Actively contributing to 1 or more subprojects.
 - Sponsored by 2 approvers. Note the following requirements for sponsors:
   - Sponsors must have close interactions with the prospective member - e.g.
@@ -72,8 +71,8 @@ Defined by: Member of the OpenTelemetry GitHub organization
   against the
   [OpenTelemetry/community](https://github.com/open-telemetry/community) repo
   - Ensure your sponsors are `@mentioned` on the issue
-  - Complete every item on the checklist ([preview the current version of the
-    template](https://github.com/open-telemetry/community/blob/main/.github/ISSUE_TEMPLATE/membership.md))
+  - Complete every item on the checklist
+    ([preview the current version of the template](../../.github/ISSUE_TEMPLATE/membership.md))
   - Make sure that the list of contributions included is representative of your
     work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `I support`
@@ -107,13 +106,22 @@ Triagers assist the maintainers and approvers with project management and
 backlog organization. The specific workflows and triage requirements depend on
 the project, and are set by the project maintainers.
 
-Defined by: [Triage permissions](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#repository-access-for-each-permission-level),
+Defined by: [Triage permissions](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#permissions-for-each-role),
 with the names of the current Triagers committed to git, either in CONTRIBUTING,
 CODEOWNERS, or the bottom of the README.
 
 Triagers may be code contributors, but writing code is not a requirement for
 becoming a triager. Triagers are encouraged to be active participants in project
 meetings, chat rooms, and other discussion forums.
+
+Triagers belong to a specific [SIG][].
+There can be multiple triager groups in a single SIG. For example, there can be
+different triager groups for different repositories owned by a SIG, or different
+triager groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional triager groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
 
 ### Requirements
 
@@ -141,6 +149,16 @@ workflow](https://help.github.com/en/articles/about-code-owners).
 
 Approver status can be scoped to a part of the codebase. For example, critical
 core components may have higher bar for becoming an approver.
+
+Approvers belong to a specific [SIG][].
+There can be multiple approver groups in a single SIG. For example, there can be
+different approver groups for different repositories owned by a SIG, or different 
+approver groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional approver groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 
 ### Requirements
 
@@ -185,6 +203,15 @@ directly or through delegation of these responsibilities.
 Defined by: GitHub organization ownership, permissions and entry in `CODEOWNERS`
 files.
 
+Maintainers belong to a specific [SIG][].
+There can be multiple maintainer groups in a single SIG. For example, there can be
+different maintainer groups for different repositories owned by a SIG, or different 
+maintainer groups for different areas of expertise (e.g. different languages in the
+documentation). A SIG can set up additional maintainer groups for organizational
+purposes to help make it easier to refer to a group of contributors, such as for
+ownership within a repository, through requesting PR reviews, or for contacting
+elsewhere on GitHub.
+
 ### Requirements
 
 Unlike the roles outlined above, the maintainers of a subproject are typically
@@ -217,9 +244,17 @@ The following apply to the subproject for which one would be a maintainer.
 - Define milestones and releases.
   - Decides on when PRs are merged to control the release scope.
 - Mentor and guide approvers, reviewers, and contributors to the subproject.
-- Escalate *reviewer*, *approver*, *maintainer* and other workflow concerns
-  (i.e. responsiveness, availability, and general contributor community health)
-  to the TC.
+- Escalate *reviewer*, *approver*, *maintainer* and other concerns to leadership
+  via appropriate channels:
+  - Workflow concerns (i.e. responsiveness, availability, and general
+    contributor community health) should be escalated to the corresponding GC
+    liaison for the subproject, either as part of regular
+    [GC check-ins](../../gc-check-ins.md) or ad-hoc.
+  - [Code of Conduct](../../code-of-conduct.md) violations, following documented
+    process, should be reported to the GC.
+  - Technical conflicts, after other internal approaches have been exhausted,
+    should be escalated to the TC (see relevant
+    [guidance](../maintainer/conflict-resolution.md)).
 - Ensure continued health of subproject:
   - Adequate test coverage to confidently release
   - Tests are passing reliably (i.e. not flaky) and are fixed when they fail
@@ -227,6 +262,10 @@ The following apply to the subproject for which one would be a maintainer.
 - Ensure a healthy process for discussion and decision making is in place.
 - Work with other maintainers to maintain the project's overall health and
   success holistically.
+
+See also the blog post [A day in the life of an OpenTelemetry
+maintainer](https://opentelemetry.io/blog/2025/day-opentelemetry-maintainer/)
+for more details on the day-to-day tasks required of maintainers.
 
 ### Becoming a Maintainer
 
@@ -342,3 +381,4 @@ merged. The merger should update the `spec-sponsors` team with the new member.
 [Technical Committee]: ../../tech-committee-charter.md
 [opentelemetry-specification]: https://github.com/open-telemetry/opentelemetry-specification
 [Members of Standing]: ../../governance-charter.md#members-of-standing
+[SIG]: ./processes.md#special-interest-groups-sigs
