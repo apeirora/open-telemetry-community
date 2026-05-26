@@ -23,7 +23,7 @@ Link: https://github.com/open-telemetry
 Link: http://cncf-aws-opentelemetry.signin.aws.amazon.com/
 
 - Community account to published Lambda layers
-- Admin: Alex Boten @codeboten & Anthony Mirabella @aneurysm9
+- Admin: Tyler Benson [@tylerbenson](https://github.com/tylerbenson), Serkan Özal [@serkan-ozal](https://github.com/serkan-ozal), Warre Pessers [@wpessers](https://github.com/wpessers)
 
 ### FOSSA
 
@@ -40,8 +40,8 @@ Link: https://app.fossa.com/
 
 CNCF provides the following large Linux runners which are available to all repositories:
 
-- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
-- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.MD#custom-runners)
+- [`oracle-16cpu-64gb-x86-64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
+- [`oracle-16cpu-64gb-arm64`](https://github.com/cncf/automation/blob/main/ci/README.md#custom-runners)
 
 Note that normal-sized Linux ARM64 runners are [available for free to all public
 repositories](https://github.blog/changelog/2025-01-16-linux-arm64-hosted-runners-now-available-for-free-in-public-repositories-public-preview/).
@@ -71,12 +71,37 @@ Access to bare metal runners for benchmarking is available to repositories on re
 (open a community issue),
 which will give access to the following GitHub-hosted runner:
 
-- `oracle-bare-metal-64cpu-512gb-x86-64`
+- `oracle-bare-metal-64cpu-512gb-x86-64` (Oracle Linux 8)
+- `oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` (Ubuntu 24)
+
+`oracle-bare-metal-64cpu-512gb-x86-64` hardware specification (BM.Standard.E2.64):
+
+| Component | Specification |
+|---|---|
+| Processor | 2-socket AMD EPYC 7551 (2.0 GHz base, 3.0 GHz max boost) |
+| OCPUs | 64 (128 vCPUs), 32 per socket |
+| Memory | 512 GB (8 NUMA nodes, 64 GB per node) |
+
+`oracle-bare-metal-64cpu-1024gb-x86-64-ubuntu-24` hardware specification ([BM.Standard3.64](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm#bm-standard)):
+
+| Component | Specification |
+|---|---|
+| Processor | 2-socket Intel Xeon Platinum 8358 (2.6 GHz base, 3.4 GHz max turbo) |
+| OCPUs | 64 (128 vCPUs), 32 per socket |
+| Memory | 1024 GB (2 NUMA nodes, 512 GB per node) |
+
+We are currently transitioning from the Oracle Linux 8 runner to the
+Ubuntu 24 runner. Once the transition is complete, the Oracle Linux 8 runner
+will be decommissioned.
 
 Note: there is only one bare metal runner at this time, so
 please ensure your workloads are optimized to avoid unnecessary usage.
 
 Admins: [@open-telemetry/admins](https://github.com/orgs/open-telemetry/teams/admins)
+
+SSH private keys are available in the SIG Project Infrastructure 1Password vault.
+
+[How to provision an Oracle bare metal runner](docs/how-to-provision-bare-metal-runner.md)
 
 #### Linux/s390x runners
 
@@ -114,13 +139,12 @@ Link: https://app.netlify.com/login
 
 - Used to manage domain names under opentelemetry.io
 - Used to publish https://opentelemetry.io
-- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin)
+- Admins: [@austinlparker](https://github.com/austinlparker), [@svrnm](https://github.com/svrnm), [@chalin](https://github.com/chalin), [@trask](https://github.com/trask)
 
 ### Oracle Cloud account
 
 Link: https://www.oracle.com/cloud/sign-in.html
 
-- Community account to run [CLOWarden](https://github.com/cncf/clowarden)
 - Admin: [@austinlparker](https://github.com/austinlparker)
   (password is available in the OpenTelemetry Governance 1Password)
 
@@ -157,9 +181,10 @@ Link: https://www.myget.org/feed/Packages/opentelemetry
 Link: https://www.npmjs.com/settings/opentelemetry/packages
 
 - Ask any of the following people if you need access
-- Owner: Mayur Kale @mayurkale22
-- Admin: Daniel Dyla @dyladan
-- Member: Bogdan Drutu @bogdandrutu
+- Owner: OpenTelemetry account `npmjs-account` (GC/TC have access to it)
+- Member: Daniel Dyla @dyladan
+- Member: Marc Pichler @pichlermarc
+- Member: Trent Mick @trentm
 
 ### Crates
 
@@ -182,8 +207,8 @@ but these individual OpenTelemetry members have been given rights to publish und
 
 Link: https://pypi.org/user/opentelemetry/
 
-- Owner: [@open-telemetry/python-maintainers](https://github.com/orgs/open-telemetry/teams/python-maintainers)
-  (password is available in the OpenTelemetry Python 1Password vault)
+- Account email: python-maintainers@opentelemetry.io ([google group](https://groups.google.com/u/1/a/opentelemetry.io/g/python-maintainers))
+- Password: Available in the OpenTelemetry Python 1Password vault
 
 ### PHP Extras
 
@@ -212,7 +237,7 @@ CNCF are the owners of the group, so certain requests (e.g. adding/removing orga
 * CNCF Service Desk
 * https://github.com/cncf/communitygroups/issues
 
-Link: https://community.cncf.io/opentelemetry/
+Link: https://community.cncf.io/opentelemetry-live/
 
 - Owners: CNCF
 - Lead Organizers (i.e. admins):
@@ -263,11 +288,12 @@ Link: https://groups.google.com/g/opentelemetry-calendar
   - cncf-opentelemetry-meeting-4@cncf.io
 - Admins: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
 - Note: while the account passwords are available in the Governance Committee 1Password, logging in from a new IP
-  address will require being a member https://lists.cncf.io/g/cncf-otel-zoomadmins with at least moderator rights so you can see
+  address will require being a member https://lists.cncf.io/g/cncf-otel-zoomadmins with role owner so you can see
   pending (unapproved) messages and retrieve the One-Time Password that is sent when you log in.
   To join https://lists.cncf.io/g/cncf-otel-zoomadmins, go to that URL and click "Apply For Membership In This Group".
   Then ask in the [#opentelemetry-gc](https://cloud-native.slack.com/archives/C01S673T1NE) for someone to approve your
   membership and then to give you owner rights.
+  Messages take ~7 minutes to show on the [Pending folder](https://lists.cncf.io/g/cncf-otel-zoomadmins/pending).
 
 ### Zapier account
 
@@ -455,6 +481,14 @@ used for self-servicing slack (e.g. as Channel Manager to rename spaces).
   (To login, go to <https://cloud-native.slack.com/>, click Sign In With Google and login as <admin@opentelemetry.io>.
   Click `Cancel` when you are asked to open slack in the app, and wait for the link `use Slack in your browser` to be
   available and use that.)
+
+#### Slack app
+
+Link: https://cloud-native.slack.com/marketplace/A0B37EY9PD2-opentelemetry-notifications
+
+- Slack capability: incoming webhook.
+- Owners: [@open-telemetry/governance-committee](https://github.com/orgs/open-telemetry/teams/governance-committee)
+- App management link: https://api.slack.com/apps/A0B37EY9PD2
 
 ## Security
 
